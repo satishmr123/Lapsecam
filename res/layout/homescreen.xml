@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/titleMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:textColor="@color/logo_color"
+        android:text="Welcome to Lapscam"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/titleMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMessage1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/logo_color"
+        android:gravity="center"
+        android:text="Record Your own Time Lapse Video"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/titleMessage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMessage2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:textColor="@color/logo_color"
+        android:text="Create Time Lapse Video from existing Videos !!!"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo" 
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/TimeLapserecorder"
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Recorder"
+        android:textSize="20sp"
+        android:background="@color/logo_color"
+        android:textColor="@android:color/black" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="2dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/TimeLapsecreator"
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Creator"
+        android:textSize="20sp"
+        android:background="@color/logo_color"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp" 
+        android:layout_marginRight="2dp"
+        android:visibility="visible"/>
+
+</RelativeLayout>

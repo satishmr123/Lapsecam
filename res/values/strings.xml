@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lapsecam</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="settings_prompt">Settings</string>
+    
+    <string name="color_effects_prompt">Choose a Color Effect</string>
+    <string-array name = "color_effects_list" >
+        <item >EFFECT_AQUA</item>
+        <item >EFFECT_BLACKBOARD</item>
+        <item >EFFECT_MONO</item>
+        <item >EFFECT_NEGATIVE</item>
+        <item >EFFECT_NONE</item>
+        <item >EFFECT_POSTERIZE</item>
+        <item >EFFECT_SEPIA</item>
+        <item >EFFECT_SOLARIZE</item>
+        <item >EFFECT_WHITEBOARD</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/videoPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Lapscam"
+        android:visibility="visible" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80101010"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/zoomin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu_add" />
+
+        <ImageButton
+            android:id="@+id/zoomout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_toRightOf="@+id/zoomin_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu_stop" />
+
+        <ImageButton
+            android:id="@+id/start_stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/start_video_recording" />
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/settings_button"
+            android:visibility="invisible"
+            android:background="@drawable/pause" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_settings_list"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/main_settings_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_settings_list"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/effects_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/autofocus_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/scene_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/whitebalance_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/flash_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/size_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:prompt="@string/settings_prompt"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
